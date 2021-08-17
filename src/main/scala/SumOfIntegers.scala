@@ -1,4 +1,3 @@
-import java.lang.ArithmeticException
 import scala.util.Random
 
 /**
@@ -14,7 +13,6 @@ object SumOfIntegers {
      }else{
        if(a == b) (3*(a+b)) else (a+b)
      }
-
    }
 
   def main(args: Array[String]): Unit ={
@@ -24,7 +22,6 @@ object SumOfIntegers {
     }catch{
       case e: ArithmeticException => System.out.println(s"Arithmetic exception as expected: ${e.getMessage}")
     }
-
     val integerOverflowEx1 = SumOfIntegers.sum(Int.MaxValue,0)
     System.out.println(s"Sum returned: ${integerOverflowEx1}")
     try{
