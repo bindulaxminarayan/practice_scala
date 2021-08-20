@@ -17,15 +17,15 @@ object SumOfIntegers {
 
   def main(args: Array[String]): Unit ={
     try{
-      val sum = SumOfIntegers.sum(Random.nextInt(), Random.nextInt())
-      System.out.println(s"Sum returned: ${sum}")
+      val sum1 = sum(Random.nextInt(), Random.nextInt())
+      System.out.println(s"Sum returned: ${sum1}")
     }catch{
       case e: ArithmeticException => System.out.println(s"Arithmetic exception as expected: ${e.getMessage}")
     }
-    val integerOverflowEx1 = SumOfIntegers.sum(Int.MaxValue,0)
+    val integerOverflowEx1 = sum(Int.MaxValue,0)
     System.out.println(s"Sum returned: ${integerOverflowEx1}")
     try{
-      val integerOverflowEx2 = SumOfIntegers.sum(Int.MaxValue,1)
+      val integerOverflowEx2 = sum(Int.MaxValue,1)
       System.out.println(s"Sum returned: ${integerOverflowEx2}")
     }catch{
       case e: ArithmeticException => System.out.println(s"Arithmetic exception as expected: ${e.getMessage}")

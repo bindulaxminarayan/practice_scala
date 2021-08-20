@@ -77,11 +77,11 @@ object SymmetricDifference {
   }
 
   def main(args: Array[String]): Unit ={
-    SymmetricDifference.symmNSquare(Array(1,2,3,4), Array(2,3,4,5))
-    SymmetricDifference.symmNSquare(Array(1,2,3), Array(5,2,1,4))
-    SymmetricDifference.symN(Array(1,2,3,4), Array(2,3,4,5))
-    SymmetricDifference.symN(Array(1,2,3), Array(5,2,1,4))
-    SymmetricDifference.symIndexOf(Array(1,2,3,4), Array(2,3,4,5))
-    SymmetricDifference.symIndexOf(Array(1,2,3), Array(5,2,1,4))
+    symmNSquare(Array(1,2,3,4), Array(2,3,4,5))
+    symmNSquare(Array(1,2,3), Array(5,2,1,4))
+    symN(Array(1,2,3,4), Array(2,3,4,5))
+    symN(Array(1,2,3), Array(5,2,1,4))
+    symIndexOf(Array(1,2,3,4), Array(2,3,4,5))
+    symIndexOf(Array(1,2,3), Array(5,2,1,4))
   }
 }

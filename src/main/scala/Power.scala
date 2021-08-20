@@ -18,8 +18,8 @@ object Power {
    }
   def main(args: Array[String]): Unit ={
     try {
-      Power.twoPower(30)
-      Power.twoPower(31)
+      twoPower(30)
+      twoPower(31)
     }catch{
       case e: ArithmeticException => System.out.println(s"Got exception ${e.getMessage}")
     }

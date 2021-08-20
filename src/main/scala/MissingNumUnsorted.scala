@@ -56,9 +56,9 @@ object MissingNumUnsorted {
     val input = Array(-3,2,-1,0,1,3,4,5,6)
     val lowerBound = -3
     val upperBound = 6
-    val missingNum = MissingNumUnsorted.missingNumber(input.toList, lowerBound, upperBound)
+    val missingNum = missingNumber(input.toList, lowerBound, upperBound)
     System.out.println(s"Missing number is ${missingNum}")
-    val ms2 = MissingNumUnsorted.missingNumberOofN(input,lowerBound,upperBound)
+    val ms2 = missingNumberOofN(input,lowerBound,upperBound)
     System.out.println(s"Missing number with O(N) is ${ms2}")
   }
 }
